@@ -7,7 +7,7 @@ const Nav = styled.nav`
   border-radius: 25px;
   background-color: var(--white);
   margin: 0 auto;
-  height: 72px;
+  height: 80px;
   margin-top: 24px;
 
   & > div {
@@ -51,7 +51,7 @@ const Navigation = () => {
         </Logo>
         <ItemWrapper>
           <Item>
-            <Link to="/">금융혜택</Link>
+            <Link to="/">금융</Link>
           </Item>
           |
           <Item>

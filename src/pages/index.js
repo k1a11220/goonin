@@ -38,6 +38,10 @@ const IndexPage = () => {
       <Container>
         <Wrapper>
           <ContentsWrapper>
+            <h2>💵 월급</h2>
+            <p>병장</p>
+          </ContentsWrapper>
+          <ContentsWrapper>
             <h2>💳 나라사랑카드</h2>
             <NaraCard>
               <LgCard
