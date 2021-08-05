@@ -16,9 +16,15 @@ const Container = styled.div`
   border-radius: 8px;
   display: flex;
   align-items: center;
+  transition: all 0.2s ease-in-out;
 
   &:nth-of-type(4n) {
     margin-right: 0;
+  }
+
+  &:hover {
+    transform: scale(1.02);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   }
 `;
 
