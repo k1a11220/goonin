@@ -16,7 +16,7 @@ const DiscountPage = () => {
             <ComCard />
           </ContentsWrapper>
           <ContentsWrapper>
-            <h2>영화티켓 할인</h2>
+            <h2>문화생활 할인</h2>
             <MovieCard />
           </ContentsWrapper>
         </Wrapper>
