@@ -27,6 +27,7 @@ const GlobalStyle = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     background-color: #EBEBEB;
     margin: 0;
+
     * {
       color: var(--color-text);
       margin: 0;

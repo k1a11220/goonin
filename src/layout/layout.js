@@ -14,7 +14,6 @@ const Layout = ({ children }) => {
       <ThemeContext.Provider value={theme}>
         <GlobalStyle />
         <Navigation />
-        Layout
         {children}
       </ThemeContext.Provider>
     </ThemeProvider>
