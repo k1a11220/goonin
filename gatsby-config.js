@@ -4,6 +4,19 @@ module.exports = {
     title: "goonin",
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-alias-imports`,
+      options: {
+        alias: {
+          "@src": "src",
+          "@components": "src/components",
+          "@layout": "src/layout",
+          "@pages": "src/pages",
+          "@styles": "src/styles",
+        },
+        extensions: ["js"],
+      },
+    },
     "gatsby-plugin-styled-components",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
