@@ -7,9 +7,8 @@ const Nav = styled.nav`
   border-radius: 25px;
   background-color: var(--white);
   margin: 0 auto;
-  height: 80px;
+  height: 72px;
   margin-top: 24px;
-  border: 1px solid #cacaca;
 
   & > div {
     height: 100%;

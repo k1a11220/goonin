@@ -3,6 +3,7 @@ import Layout from "../layout/layout";
 import styled from "styled-components";
 import LgCard from "../components/lgCard";
 import FundTable from "../components/fundTable";
+import FundCard from "../components/fundCard";
 
 const Container = styled.main`
   width: var(--width);
@@ -16,13 +17,16 @@ const Wrapper = styled.div`
   padding: 64px 40px;
 `;
 
-const NaraCardWrapper = styled.section`
+const ContentsWrapper = styled.section`
   margin-bottom: 64px;
+
+  & h2 {
+    margin-bottom: 32px;
+  }
 `;
 
 const NaraCard = styled.div`
   display: flex;
-  margin-top: 32px;
 `;
 
 const IndexPage = () => {
@@ -30,7 +34,7 @@ const IndexPage = () => {
     <Layout>
       <Container>
         <Wrapper>
-          <NaraCardWrapper>
+          <ContentsWrapper>
             <h2>나라사랑카드</h2>
             <NaraCard>
               <LgCard
@@ -60,14 +64,15 @@ const IndexPage = () => {
                 discount_4="최대 2천원"
               />
             </NaraCard>
-          </NaraCardWrapper>
-          <NaraCardWrapper>
+          </ContentsWrapper>
+          <ContentsWrapper>
             <h2>장병내일준비적금</h2>
-            <FundTable />
-          </NaraCardWrapper>
-          <NaraCardWrapper>
+            {/* <FundTable /> */}
+            <FundCard />
+          </ContentsWrapper>
+          <ContentsWrapper>
             <h2>제주지역 항공료 지원</h2>
-          </NaraCardWrapper>
+          </ContentsWrapper>
         </Wrapper>
       </Container>
     </Layout>

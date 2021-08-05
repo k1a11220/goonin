@@ -1,11 +1,13 @@
 import React from "react";
 import styled from "styled-components";
+import { FundList } from "../constants/fundList";
 
 const Container = styled.section`
   margin-top: 32px;
 `;
 
 const FundTable = () => {
+  console.log(FundList);
   return (
     <Container>
       <table>
@@ -19,104 +21,19 @@ const FundTable = () => {
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>광주은행</td>
-            <td>4.00</td>
-            <td>4.50</td>
-            <td>5.20</td>
-            <td>홈페이지</td>
-          </tr>
-          <tr>
-            <td>NH농협은행</td>
-            <td>3.00</td>
-            <td>4.00</td>
-            <td>5.00</td>
-            <td>홈페이지</td>
-          </tr>
-          <tr>
-            <td>신한은행</td>
-            <td>4.00</td>
-            <td>4.50</td>
-            <td>5.00</td>
-            <td>홈페이지</td>
-          </tr>
-          <tr>
-            <td>우리은행</td>
-            <td>3.50</td>
-            <td>4.00</td>
-            <td>5.00</td>
-            <td>홈페이지</td>
-          </tr>
-          <tr>
-            <td>하나은행</td>
-            <td>3.50</td>
-            <td>4.00</td>
-            <td>5.00</td>
-            <td>홈페이지</td>
-          </tr>
-          <tr>
-            <td>IBK기업은행</td>
-            <td>4.00</td>
-            <td>4.50</td>
-            <td>5.00</td>
-            <td>홈페이지</td>
-          </tr>
-          <tr>
-            <td>KB국민은행</td>
-            <td>3.50</td>
-            <td>4.50</td>
-            <td>5.00</td>
-            <td>홈페이지</td>
-          </tr>
-          <tr>
-            <td>DGB대구은행</td>
-            <td>4.00</td>
-            <td>4.50</td>
-            <td>5.00</td>
-            <td>홈페이지</td>
-          </tr>
-          <tr>
-            <td>제주은행</td>
-            <td>4.00</td>
-            <td>4.50</td>
-            <td>5.00</td>
-            <td>홈페이지</td>
-          </tr>
-          <tr>
-            <td>전북은행</td>
-            <td>3.60</td>
-            <td>4.10</td>
-            <td>5.00</td>
-            <td>홈페이지</td>
-          </tr>
-          <tr>
-            <td>우체국</td>
-            <td>4.00</td>
-            <td>4.50</td>
-            <td>5.00</td>
-            <td>홈페이지</td>
-          </tr>
-          <tr>
-            <td>SH수협은행</td>
-            <td>2.50</td>
-            <td>3.50</td>
-            <td>4.50</td>
-            <td>홈페이지</td>
-          </tr>
-          <tr>
-            <td>BNK부산은행</td>
-            <td>3.50</td>
-            <td>4.00</td>
-            <td>4.50</td>
-            <td>홈페이지</td>
-          </tr>
-          <tr>
-            <td>BNK경남은행</td>
-            <td>3.10</td>
-            <td>3.90</td>
-            <td>4.50</td>
-            <td>홈페이지</td>
-          </tr>
+          {FundList.map((data) => {
+            return (
+              <tr>
+                <td>{data.bank}</td>
+                <td>{data.month_1}</td>
+                <td>{data.month_2}</td>
+                <td>{data.month_3}</td>
+                <td>
+                  <a href={data.link}>홈페이지</a>
+                </td>
+              </tr>
+            );
+          })}
         </tbody>
       </table>
     </Container>
