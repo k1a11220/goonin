@@ -14,6 +14,7 @@ const Container = styled.div`
   border: 1px solid #cacaca;
   border-radius: 8px;
   transition: all 0.2s ease-in-out;
+  margin-right: 16px;
 
   &:hover {
     transform: scale(1.02);
@@ -35,7 +36,7 @@ const Title = styled.div`
 
   & h3 {
     font-size: 18px;
-    color: #ffbc00;
+    color: ${(props) => props.color};
   }
 `;
 
@@ -56,12 +57,14 @@ const Contents = styled.div`
 
   & p:last-of-type {
     color: #3a9900;
+    font-weight: 700;
   }
 `;
 
 const LgCard = ({
   title,
   link,
+  color,
   service_1,
   service_2,
   service_3,
@@ -73,13 +76,9 @@ const LgCard = ({
 }) => {
   return (
     <Container>
-      <Link
-        href="https://card.kbcard.com/CXPRICAC0076.cms?mainCC=a&cooperationcode=04120"
-        target="_blank"
-        rel="noopener"
-      >
+      <Link href={link} target="_blank" rel="noopener">
         <Wrapper>
-          <Title>
+          <Title color={color}>
             <h3>{title}</h3>
             <img src={More} alt="more" />
           </Title>
