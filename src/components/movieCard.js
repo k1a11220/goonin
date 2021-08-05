@@ -1,0 +1,32 @@
+import React from "react";
+import styled from "styled-components";
+import { MovieList } from "../constants/movieList";
+import SmCard from "./smCard";
+
+const Container = styled.div``;
+const Wrapper = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+`;
+
+const MovieCard = () => {
+  return (
+    <Container>
+      <Wrapper>
+        {MovieList.map((data) => {
+          return (
+            <SmCard
+              title={data.title}
+              detail={data.price}
+              icon={data.icon}
+              link={data.link}
+            />
+          );
+        })}
+      </Wrapper>
+    </Container>
+  );
+};
+
+export default MovieCard;
