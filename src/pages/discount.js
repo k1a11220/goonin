@@ -1,4 +1,5 @@
 import React from "react";
+import ComCard from "../components/comCard";
 import Layout from "../layout/layout";
 import Container from "../styles/Container";
 import ContentsWrapper from "../styles/contentsWrapper";
@@ -11,6 +12,7 @@ const DiscountPage = () => {
         <Wrapper>
           <ContentsWrapper>
             <h2>통신비 할인</h2>
+            <ComCard />
           </ContentsWrapper>
         </Wrapper>
       </Container>
