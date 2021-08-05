@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { CultureList } from "@src/constants/cultureList";
 import SmCard from "@components/common/smCard";
 
 const Container = styled.div``;
@@ -10,11 +9,11 @@ const Wrapper = styled.div`
   gap: 16px;
 `;
 
-const CultureCard = () => {
+const SmCardList = ({ CardList }) => {
   return (
     <Container>
       <Wrapper>
-        {CultureList.map((data) => {
+        {CardList.map((data) => {
           return (
             <SmCard
               title={data.title}
@@ -29,4 +28,4 @@ const CultureCard = () => {
   );
 };
 
-export default CultureCard;
+export default SmCardList;

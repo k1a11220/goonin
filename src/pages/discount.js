@@ -1,10 +1,14 @@
 import React from "react";
-import ComCard from "@components/communication/comCard";
-import CultureCard from "@components/culture/cultureCard";
 import Layout from "@layout/layout";
 import Container from "@styles/Container";
 import ContentsWrapper from "@styles/contentsWrapper";
 import Wrapper from "@styles/wrapper";
+
+import SmCardList from "../components/common/smCardList";
+
+import { PlayList } from "../constants/playList";
+import { CultureList } from "../constants/cultureList";
+import { ComList } from "../constants/comList";
 
 const DiscountPage = () => {
   return (
@@ -13,11 +17,15 @@ const DiscountPage = () => {
         <Wrapper>
           <ContentsWrapper>
             <h2>📱 통신</h2>
-            <ComCard />
+            <SmCardList CardList={ComList} />
           </ContentsWrapper>
           <ContentsWrapper>
             <h2>🎬 문화생활</h2>
-            <CultureCard />
+            <SmCardList CardList={CultureList} />
+          </ContentsWrapper>
+          <ContentsWrapper>
+            <h2>🎡 여행 & 액티비티</h2>
+            <SmCardList CardList={PlayList} />
           </ContentsWrapper>
         </Wrapper>
       </Container>
