@@ -12,11 +12,11 @@ const DiscountPage = () => {
       <Container>
         <Wrapper>
           <ContentsWrapper>
-            <h2>통신비 할인</h2>
+            <h2>📱 통신</h2>
             <ComCard />
           </ContentsWrapper>
           <ContentsWrapper>
-            <h2>문화생활 할인</h2>
+            <h2>🎬 문화생활</h2>
             <CultureCard />
           </ContentsWrapper>
         </Wrapper>

@@ -38,7 +38,7 @@ const IndexPage = () => {
       <Container>
         <Wrapper>
           <ContentsWrapper>
-            <h2>나라사랑카드</h2>
+            <h2>💳 나라사랑카드</h2>
             <NaraCard>
               <LgCard
                 title="KB국민은행"
@@ -70,7 +70,7 @@ const IndexPage = () => {
           </ContentsWrapper>
           <ContentsWrapper>
             <FundTitle>
-              <h2>장병내일준비적금</h2>
+              <h2>🏦 장병내일준비적금</h2>
               <button
                 onClick={(e) => setTable(!table)}
                 bgcolor={table === true ? "#0a0a0a" : "#326BBF"}

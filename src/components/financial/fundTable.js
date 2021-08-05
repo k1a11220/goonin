@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { FundList } from "../../constants/fundList";
+import { FundList } from "@src/constants/fundList";
 
 const Container = styled.section``;
 

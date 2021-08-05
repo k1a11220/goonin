@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import { CultureList } from "../../constants/cultureList";
-import SmCard from "../common/smCard";
+import { CultureList } from "@src/constants/cultureList";
+import SmCard from "@components/common/smCard";
 
 const Container = styled.div``;
 const Wrapper = styled.div`
