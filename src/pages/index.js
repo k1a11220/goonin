@@ -4,26 +4,9 @@ import styled from "styled-components";
 import LgCard from "../components/lgCard";
 import FundTable from "../components/fundTable";
 import FundCard from "../components/fundCard";
-
-const Container = styled.main`
-  width: var(--width);
-  background-color: var(--white);
-  border-radius: 25px;
-  margin: 0 auto;
-  margin-top: 32px;
-`;
-
-const Wrapper = styled.div`
-  padding: 64px 40px 0 40px;
-`;
-
-const ContentsWrapper = styled.section`
-  padding-bottom: 64px;
-
-  & h2 {
-    margin-bottom: 32px;
-  }
-`;
+import Container from "../styles/Container";
+import Wrapper from "../styles/wrapper";
+import ContentsWrapper from "../styles/contentsWrapper";
 
 const NaraCard = styled.div`
   display: flex;
