@@ -41,7 +41,7 @@ const TextWrapper = styled.div`
   }
 `;
 
-const Icon = styled.div`
+const Icon = styled.img`
   width: 40px;
   height: 40px;
   border-radius: 20px;
@@ -53,7 +53,7 @@ const SmCard = ({ title, detail, icon, link }) => {
   return (
     <Link href={link} target="_blank" rel="noopener">
       <Container>
-        <Icon icon={icon} />
+        <Icon src={icon} />
         <TextWrapper>
           <h4>{title}</h4>
           <p>{detail}</p>

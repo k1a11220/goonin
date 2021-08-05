@@ -27,7 +27,7 @@ const FundCard = () => {
             <BankCard
               title={data.bank}
               detail={data.month_3}
-              icon={data.link}
+              icon={data.icon}
               link={data.link}
             />
           );
