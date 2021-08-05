@@ -14,11 +14,11 @@ const Container = styled.main`
 `;
 
 const Wrapper = styled.div`
-  padding: 64px 40px;
+  padding: 64px 40px 0 40px;
 `;
 
 const ContentsWrapper = styled.section`
-  margin-bottom: 64px;
+  padding-bottom: 64px;
 
   & h2 {
     margin-bottom: 32px;
@@ -41,7 +41,9 @@ const FundTitle = styled.div`
     height: 40px;
     border: none;
     border-radius: 8px;
-    background-color: #ebedf2;
+    background-color: #326bbf;
+    color: var(--white);
+    font-size: 14px;
   }
 `;
 
@@ -94,9 +96,6 @@ const IndexPage = () => {
               </button>
             </FundTitle>
             {table === true ? <FundTable /> : <FundCard />}
-          </ContentsWrapper>
-          <ContentsWrapper>
-            <h2>제주지역 항공료 지원</h2>
           </ContentsWrapper>
         </Wrapper>
       </Container>

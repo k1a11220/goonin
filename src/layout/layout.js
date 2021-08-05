@@ -5,6 +5,7 @@ import useTheme from "../hooks/useTheme";
 import styledTheme from "../styles/theme";
 import GlobalStyle from "../styles/globalStyle";
 import Navigation from "../components/navigation";
+import Footer from "../components/footer";
 
 const Layout = ({ children }) => {
   const [theme, themeToggler] = useTheme();
@@ -15,6 +16,7 @@ const Layout = ({ children }) => {
         <GlobalStyle />
         <Navigation />
         {children}
+        <Footer />
       </ThemeContext.Provider>
     </ThemeProvider>
   );
