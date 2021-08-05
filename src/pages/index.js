@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Layout from "../layout/layout";
 import styled from "styled-components";
 import LgCard from "../components/lgCard";
@@ -29,7 +29,25 @@ const NaraCard = styled.div`
   display: flex;
 `;
 
+const FundTitle = styled.div`
+  display: flex;
+  justify-content: space-between;
+
+  & button {
+    position: relative;
+    top: -4px;
+    cursor: pointer;
+    width: 90px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ebedf2;
+  }
+`;
+
 const IndexPage = () => {
+  const [table, setTable] = useState(true);
+
   return (
     <Layout>
       <Container>
@@ -66,9 +84,16 @@ const IndexPage = () => {
             </NaraCard>
           </ContentsWrapper>
           <ContentsWrapper>
-            <h2>장병내일준비적금</h2>
-            {/* <FundTable /> */}
-            <FundCard />
+            <FundTitle>
+              <h2>장병내일준비적금</h2>
+              <button
+                onClick={(e) => setTable(!table)}
+                bgcolor={table === true ? "#0a0a0a" : "#326BBF"}
+              >
+                {table === true ? "카드 보기" : "표 보기"}
+              </button>
+            </FundTitle>
+            {table === true ? <FundTable /> : <FundCard />}
           </ContentsWrapper>
           <ContentsWrapper>
             <h2>제주지역 항공료 지원</h2>

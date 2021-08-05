@@ -2,9 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { FundList } from "../constants/fundList";
 
-const Container = styled.section`
-  margin-top: 32px;
-`;
+const Container = styled.section``;
 
 const FundTable = () => {
   console.log(FundList);
