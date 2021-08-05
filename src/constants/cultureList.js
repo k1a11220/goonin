@@ -1,4 +1,4 @@
-export const MovieList = [
+export const CultureList = [
   {
     title: "롯데시네마",
     price: "2D : 7,000원 | 3D : 8,000원",

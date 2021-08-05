@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import { MovieList } from "../constants/movieList";
-import SmCard from "./smCard";
+import { FundList } from "../../constants/fundList";
+import SmCard from "../common/smCard";
 
 const Container = styled.div``;
 const Wrapper = styled.div`
@@ -10,15 +10,17 @@ const Wrapper = styled.div`
   gap: 16px;
 `;
 
-const MovieCard = () => {
+const BankCard = styled(SmCard)``;
+
+const FundCard = () => {
   return (
     <Container>
       <Wrapper>
-        {MovieList.map((data) => {
+        {FundList.map((data) => {
           return (
-            <SmCard
-              title={data.title}
-              detail={data.price}
+            <BankCard
+              title={data.bank}
+              detail={data.month_3}
               icon={data.icon}
               link={data.link}
             />
@@ -29,4 +31,4 @@ const MovieCard = () => {
   );
 };
 
-export default MovieCard;
+export default FundCard;

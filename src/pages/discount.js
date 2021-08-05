@@ -1,6 +1,6 @@
 import React from "react";
-import ComCard from "../components/comCard";
-import MovieCard from "../components/movieCard";
+import ComCard from "../components/communication/comCard";
+import CultureCard from "../components/culture/cultureCard";
 import Layout from "../layout/layout";
 import Container from "../styles/Container";
 import ContentsWrapper from "../styles/contentsWrapper";
@@ -17,7 +17,7 @@ const DiscountPage = () => {
           </ContentsWrapper>
           <ContentsWrapper>
             <h2>문화생활 할인</h2>
-            <MovieCard />
+            <CultureCard />
           </ContentsWrapper>
         </Wrapper>
       </Container>

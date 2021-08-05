@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import More from "../images/more.svg";
+import More from "../../images/more.svg";
 
 const Link = styled.a`
   text-decoration: none;

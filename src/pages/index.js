@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import Layout from "../layout/layout";
 import styled from "styled-components";
-import LgCard from "../components/lgCard";
-import FundTable from "../components/fundTable";
-import FundCard from "../components/fundCard";
+import LgCard from "../components/common/lgCard";
+import FundTable from "../components/financial/fundTable";
+import FundCard from "../components/financial/fundCard";
 import Container from "../styles/Container";
 import Wrapper from "../styles/wrapper";
 import ContentsWrapper from "../styles/contentsWrapper";

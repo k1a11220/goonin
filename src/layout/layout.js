@@ -4,8 +4,8 @@ import ThemeContext from "../store/themeContext";
 import useTheme from "../hooks/useTheme";
 import styledTheme from "../styles/theme";
 import GlobalStyle from "../styles/globalStyle";
-import Navigation from "../components/navigation";
-import Footer from "../components/footer";
+import Navigation from "../components/common/navigation";
+import Footer from "../components/common/footer";
 
 const Layout = ({ children }) => {
   const [theme, themeToggler] = useTheme();
