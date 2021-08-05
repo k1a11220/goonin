@@ -5,6 +5,7 @@ export const FundList = [
     month_2: "4.50",
     month_3: "5.20",
     link: "",
+    icon: "../images/bankLogo/GWANG.png",
   },
   {
     bank: "NH농협은행",
@@ -12,6 +13,7 @@ export const FundList = [
     month_2: "4.00",
     month_3: "5.00",
     link: "",
+    icon: "../images/bankLogo/NH.png",
   },
   {
     bank: "신한은행",
@@ -19,6 +21,7 @@ export const FundList = [
     month_2: "4.50",
     month_3: "5.00",
     link: "",
+    icon: "../images/bankLogo/SHIN.png",
   },
   {
     bank: "우리은행",
@@ -26,6 +29,7 @@ export const FundList = [
     month_2: "4.00",
     month_3: "5.00",
     link: "",
+    icon: "../images/bankLogo/WOO.png",
   },
   {
     bank: "하나은행",
@@ -33,6 +37,7 @@ export const FundList = [
     month_2: "4.00",
     month_3: "5.00",
     link: "",
+    icon: "../images/bankLogo/HANA.png",
   },
   {
     bank: "IBK기업은행",
@@ -40,6 +45,7 @@ export const FundList = [
     month_2: "4.50",
     month_3: "5.00",
     link: "",
+    icon: "../images/bankLogo/IBK.png",
   },
   {
     bank: "KB국민은행",
@@ -47,6 +53,7 @@ export const FundList = [
     month_2: "4.50",
     month_3: "5.00",
     link: "",
+    icon: "../images/bankLogo/KB.png",
   },
   {
     bank: "DGB대구은행",
@@ -54,6 +61,7 @@ export const FundList = [
     month_2: "4.05",
     month_3: "5.00",
     link: "",
+    icon: "../images/bankLogo/DGB.png",
   },
   {
     bank: "제주은행",
@@ -61,6 +69,7 @@ export const FundList = [
     month_2: "4.50",
     month_3: "5.00",
     link: "",
+    icon: "../images/bankLogo/JEJU.png",
   },
   {
     bank: "전북은행",
@@ -68,6 +77,7 @@ export const FundList = [
     month_2: "4.10",
     month_3: "5.00",
     link: "",
+    icon: "../images/bankLogo/JEONBUK.png",
   },
   {
     bank: "우체국",
@@ -75,6 +85,7 @@ export const FundList = [
     month_2: "4.50",
     month_3: "5.00",
     link: "",
+    icon: "../images/bankLogo/POST.png",
   },
   {
     bank: "SH수협은행",
@@ -82,6 +93,7 @@ export const FundList = [
     month_2: "3.50",
     month_3: "4.50",
     link: "",
+    icon: "../images/bankLogo/SH.png",
   },
   {
     bank: "BNK부산은행",
@@ -89,6 +101,7 @@ export const FundList = [
     month_2: "4.00",
     month_3: "4.50",
     link: "",
+    icon: "../images/bankLogo/BNKB.png",
   },
   {
     bank: "BNK경남은행",
@@ -96,5 +109,6 @@ export const FundList = [
     month_2: "3.90",
     month_3: "4.50",
     link: "",
+    icon: "../images/bankLogo/BNKK.png",
   },
 ];
