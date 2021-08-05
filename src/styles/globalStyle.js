@@ -4,6 +4,11 @@ const GlobalStyle = createGlobalStyle`
   :root {
     font-size: 100%;
 
+    --white: #ffffff;
+
+    --width: 1200px;
+
+
     body.light {
         --color-text: #1d1d1d;
     }
@@ -20,9 +25,12 @@ const GlobalStyle = createGlobalStyle`
   body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
     -webkit-font-smoothing: antialiased;
-
+    background-color: #EBEBEB;
+    margin: 0;
     * {
       color: var(--color-text);
+      margin: 0;
+      padding: 0;
     }
   }
   

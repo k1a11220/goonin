@@ -5,7 +5,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <main>
-        <h1>Index</h1>
+        <h1>Financial</h1>
       </main>
     </Layout>
   );
