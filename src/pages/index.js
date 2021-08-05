@@ -2,6 +2,7 @@ import React from "react";
 import Layout from "../layout/layout";
 import styled from "styled-components";
 import LgCard from "../components/lgCard";
+import FundTable from "../components/fundTable";
 
 const Container = styled.main`
   width: var(--width);
@@ -62,6 +63,10 @@ const IndexPage = () => {
           </NaraCardWrapper>
           <NaraCardWrapper>
             <h2>장병내일준비적금</h2>
+            <FundTable />
+          </NaraCardWrapper>
+          <NaraCardWrapper>
+            <h2>제주지역 항공료 지원</h2>
           </NaraCardWrapper>
         </Wrapper>
       </Container>

@@ -34,6 +34,66 @@ const GlobalStyle = createGlobalStyle`
       padding: 0;
     }
   }
+
+  th {
+    color: var(--white);
+    font-weight: 400;
+  }
+
+  td {
+    font-weight: 500;
+  }
+
+  th, td {
+    padding: 15px 40px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+    background-color: #326BBF;
+  }
+
+  tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+  }
+
+  tr:nth-of-type(2n){
+    background-color: #EBEDF2;
+  }
+
+  tr td:first-of-type {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+
+  tr td:last-of-type {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+
+  tr th:first-of-type {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+
+  tr th:last-of-type {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+
+  thead,
+  tfoot {
+    text-align: left;
+  }
   
   :lang(ko) {
     word-break: keep-all; 
