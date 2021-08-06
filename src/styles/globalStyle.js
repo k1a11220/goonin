@@ -3,18 +3,32 @@ import { createGlobalStyle } from "styled-components";
 const GlobalStyle = createGlobalStyle`
   :root {
     font-size: 100%;
-
     --white: #ffffff;
-
     --width: 1200px;
 
 
     body.light {
         --color-text: #1d1d1d;
+        --color-text-1: #ffffff;
+        --color-text-2: #326bbf;
+        --bg-color: #EBEBEB;
+        --card-color: #ffffff;
+        --card-color-1: #ebedf2;
+        --card-color-2: #ffffff;
+        --border: #cacaca;
+        --highlight-color: #326BBF;
     }
 
     body.dark {
         --color-text: #e6e6e6;
+        --color-text-1: #1d1d1f;
+        --color-text-2: #3282B8;
+        --bg-color: #121212;
+        --card-color: #1c1c1c;
+        --card-color-1: #2c2c2c;
+        --card-color-2: #1c1c1c;
+        --border: rgba(207, 207, 207, 0.2);
+        --highlight-color: #DDDDDD;
     }
   }
 
@@ -25,8 +39,9 @@ const GlobalStyle = createGlobalStyle`
   body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
     -webkit-font-smoothing: antialiased;
-    background-color: #EBEBEB;
+    background-color: var(--bg-color);
     margin: 0;
+    transition: all 0.2 ease-in-out;
 
     * {
       color: var(--color-text);
@@ -36,7 +51,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   th {
-    color: var(--white);
+    color: var( --color-text-1);
     font-weight: 400;
   }
 
@@ -57,7 +72,7 @@ const GlobalStyle = createGlobalStyle`
     display: table-header-group;
     vertical-align: middle;
     border-color: inherit;
-    background-color: #326BBF;
+    background-color: var(--highlight-color);
   }
 
   tr {
@@ -67,7 +82,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   tr:nth-of-type(2n){
-    background-color: #EBEDF2;
+    background-color: var(--card-color-1);
   }
 
   tr td:first-of-type {

@@ -16,6 +16,7 @@ const Layout = ({ children }) => {
         <GlobalStyle />
         <Navigation />
         {children}
+        <button onClick={themeToggler}>다크모드</button>
         <Footer />
       </ThemeContext.Provider>
     </ThemeProvider>

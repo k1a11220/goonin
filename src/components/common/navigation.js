@@ -5,7 +5,7 @@ import { Link } from "gatsby";
 const Nav = styled.nav`
   width: var(--width);
   border-radius: 25px;
-  background-color: var(--white);
+  background-color: var(--card-color);
   margin: 0 auto;
   height: 80px;
   margin-top: 24px;

@@ -4,7 +4,7 @@ import styled from "styled-components";
 import LgCard from "@components/common/lgCard";
 import FundTable from "@components/financial/fundTable";
 import FundCard from "@components/financial/fundCard";
-import Container from "@styles/Container";
+import Container from "@styles/container";
 import Wrapper from "@styles/wrapper";
 import ContentsWrapper from "@styles/contentsWrapper";
 
@@ -24,8 +24,8 @@ const FundTitle = styled.div`
     height: 40px;
     border: none;
     border-radius: 8px;
-    background-color: #326bbf;
-    color: var(--white);
+    background-color: var(--highlight-color);
+    color: var(--color-text-1);
     font-size: 14px;
   }
 `;

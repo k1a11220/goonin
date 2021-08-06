@@ -5,7 +5,7 @@ const Container = styled.footer`
   width: var(--width);
   height: 200px;
   border-radius: 25px;
-  background-color: var(--white);
+  background-color: var(--card-color);
   margin: 0 auto;
   margin-top: 32px;
   margin-bottom: 32px;

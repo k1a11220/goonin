@@ -12,7 +12,7 @@ const Link = styled.a`
 const Container = styled.div`
   width: 268px;
   height: 90px;
-  background-color: #ebedf2;
+  background-color: var(--card-color-1);
   border-radius: 8px;
   display: flex;
   align-items: center;
@@ -38,7 +38,7 @@ const TextWrapper = styled.div`
   & p {
     font-size: 14px;
     font-weight: 600;
-    color: #326bbf;
+    color: var(--color-text-2);
   }
 `;
 

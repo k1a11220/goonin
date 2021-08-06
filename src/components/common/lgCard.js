@@ -10,8 +10,8 @@ const Link = styled.a`
 const Container = styled.div`
   width: 320px;
   height: 208px;
-  background-color: var(--white);
-  border: 1px solid #cacaca;
+  background-color: var(--card-color-2);
+  border: 1px solid var(--border);
   border-radius: 8px;
   transition: all 0.2s ease-in-out;
   margin-right: 16px;
