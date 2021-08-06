@@ -8,6 +8,8 @@ import Container from "@styles/container";
 import Wrapper from "@styles/wrapper";
 import ContentsWrapper from "@styles/contentsWrapper";
 import { FundList } from "@src/constants/fundList";
+import MdCardList from "../components/common/mdCardList";
+import { SalaryList } from "../constants/salaryList";
 
 const NaraCard = styled.div`
   display: grid;
@@ -46,7 +48,7 @@ const IndexPage = () => {
         <Wrapper>
           <ContentsWrapper>
             <h2>💵 월급</h2>
-            <p>병장</p>
+            <MdCardList CardList={SalaryList} />
           </ContentsWrapper>
           <ContentsWrapper>
             <h2>💳 나라사랑카드</h2>

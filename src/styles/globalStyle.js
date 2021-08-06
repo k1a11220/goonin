@@ -32,7 +32,7 @@ const GlobalStyle = createGlobalStyle`
         --color-text-4: #5b5b5b;
         --bg-color: #EBEBEB;
         --card-color: #ffffff;
-        --card-color-1: #ebedf2;
+        --card-color-1: #F2F3F5;
         --card-color-2: #ffffff;
         --border: #cacaca;
         --highlight-color: #326BBF;
