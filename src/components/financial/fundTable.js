@@ -2,7 +2,13 @@ import React from "react";
 import styled from "styled-components";
 import { FundList } from "@src/constants/fundList";
 
-const Container = styled.section``;
+const Container = styled.section`
+  overflow-x: scroll;
+
+  & table {
+    min-width: 1010px;
+  }
+`;
 
 const FundTable = () => {
   console.log(FundList);

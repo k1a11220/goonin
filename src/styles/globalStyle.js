@@ -5,6 +5,23 @@ const GlobalStyle = createGlobalStyle`
     font-size: 100%;
     --white: #ffffff;
     --width: 1200px;
+    --main-radius: 25px;
+    --top-padding: 64px;
+    --side-padding: 40px;
+
+    --page-margin: 24px;
+
+    @media (max-width: 1200px) {
+      --width: 95%
+    }
+
+    @media (max-width: 830px) {
+      --main-radius: 0;
+      --top-padding: 56px;
+      --side-padding: 20px;
+      --width: 100%;
+      --page-margin: 0;
+    }
 
 
     body.light {

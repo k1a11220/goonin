@@ -4,18 +4,28 @@ import { Link } from "gatsby";
 
 const Nav = styled.nav`
   width: var(--width);
-  border-radius: 25px;
+  border-radius: var(--main-radius);
   background-color: var(--card-color);
   margin: 0 auto;
   height: 80px;
-  margin-top: 24px;
+  margin-top: var(--page-margin);
+
+  @media (max-width: ${({ theme }) => theme.device.xs}) {
+    text-align: center;
+    height: 100%;
+  }
 
   & > div {
     height: 100%;
-    padding: 0 40px 0 40px;
+    padding: 0 var(--side-padding) 0 var(--side-padding);
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: ${({ theme }) => theme.device.xs}) {
+      flex-direction: column;
+      padding: 20px 0 20px 0;
+    }
   }
 
   & * {
@@ -27,6 +37,15 @@ const Nav = styled.nav`
 const Logo = styled.div`
   font-size: 22px;
   font-weight: 700;
+
+  @media (max-width: ${({ theme }) => theme.device.sm}) {
+    font-size: 20px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.device.xs}) {
+    font-size: 20px;
+    margin-bottom: 14px;
+  }
 `;
 
 const ItemWrapper = styled.ul`
@@ -36,9 +55,16 @@ const ItemWrapper = styled.ul`
 const Item = styled.li`
   font-size: 18px;
   margin: 0 14px 0 14px;
+  @media (max-width: ${({ theme }) => theme.device.sm}) {
+    font-size: 16px;
+  }
 
   &:last-of-type {
     margin-right: 0;
+
+    @media (max-width: ${({ theme }) => theme.device.xs}) {
+      margin-right: 14px;
+    }
   }
 `;
 

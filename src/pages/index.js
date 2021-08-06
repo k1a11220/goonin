@@ -7,9 +7,16 @@ import FundCard from "@components/financial/fundCard";
 import Container from "@styles/container";
 import Wrapper from "@styles/wrapper";
 import ContentsWrapper from "@styles/contentsWrapper";
+import { FundList } from "@src/constants/fundList";
 
 const NaraCard = styled.div`
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 16px;
+
+  @media (max-width: ${({ theme }) => theme.device.md}) {
+    overflow-x: scroll;
+  }
 `;
 
 const FundTitle = styled.div`
@@ -82,7 +89,7 @@ const IndexPage = () => {
                 {table === true ? "카드 보기" : "표 보기"}
               </button>
             </FundTitle>
-            {table === true ? <FundTable /> : <FundCard />}
+            {table === true ? <FundTable /> : <FundCard CardList={FundList} />}
           </ContentsWrapper>
         </Wrapper>
       </Container>

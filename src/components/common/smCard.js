@@ -10,7 +10,7 @@ const Link = styled.a`
 `;
 
 const Container = styled.div`
-  width: 268px;
+  /* width: 268px; */
   height: 90px;
   background-color: var(--card-color-1);
   border-radius: 8px;
@@ -30,6 +30,7 @@ const Container = styled.div`
 
 const TextWrapper = styled.div`
   margin-left: 16px;
+  margin-right: 20px;
 
   & h4 {
     font-weight: 500;

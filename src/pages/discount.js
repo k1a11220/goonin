@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "@layout/layout";
-import Container from "@styles/Container";
+import Container from "@styles/container";
 import ContentsWrapper from "@styles/contentsWrapper";
 import Wrapper from "@styles/wrapper";
 

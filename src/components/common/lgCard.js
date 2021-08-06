@@ -14,7 +14,6 @@ const Container = styled.div`
   border: 1px solid var(--border);
   border-radius: 8px;
   transition: all 0.2s ease-in-out;
-  margin-right: 16px;
 
   &:hover {
     transform: scale(1.02);
