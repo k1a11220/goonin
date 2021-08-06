@@ -11,6 +11,8 @@ const GlobalStyle = createGlobalStyle`
         --color-text: #1d1d1d;
         --color-text-1: #ffffff;
         --color-text-2: #326bbf;
+        --color-text-3: #c1c1c1;
+        --color-text-4: #5b5b5b;
         --bg-color: #EBEBEB;
         --card-color: #ffffff;
         --card-color-1: #ebedf2;
@@ -23,6 +25,8 @@ const GlobalStyle = createGlobalStyle`
         --color-text: #e6e6e6;
         --color-text-1: #1d1d1f;
         --color-text-2: #3282B8;
+        --color-text-3: #5b5b5b;
+        --color-text-4: #e6e6e6;
         --bg-color: #121212;
         --card-color: #1c1c1c;
         --card-color-1: #2c2c2c;
@@ -47,6 +51,7 @@ const GlobalStyle = createGlobalStyle`
       color: var(--color-text);
       margin: 0;
       padding: 0;
+      transition: background 0.2s ease-in-out;
     }
   }
 
