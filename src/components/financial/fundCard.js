@@ -15,6 +15,10 @@ const Wrapper = styled.div`
   @media (max-width: ${({ theme }) => theme.device.md}) {
     grid-template-columns: 1fr 1fr;
   }
+
+  @media (max-width: ${({ theme }) => theme.device.sm}) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 const BankCard = styled(SmCard)``;
