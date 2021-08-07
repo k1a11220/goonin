@@ -5,7 +5,7 @@ const Container = styled.main`
   background-color: var(--card-color);
   border-radius: var(--main-radius);
   margin: 0 auto;
-  margin-top: 32px;
+  margin-top: var(--page-padding);
 `;
 
 export default Container;

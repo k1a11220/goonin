@@ -11,6 +11,8 @@ const GlobalStyle = createGlobalStyle`
 
     --page-margin: 24px;
 
+    --page-padding: 32px;
+
     @media (max-width: 1200px) {
       --width: 95%
     }
@@ -21,6 +23,8 @@ const GlobalStyle = createGlobalStyle`
       --side-padding: 20px;
       --width: 100%;
       --page-margin: 0;
+
+      --page-padding: 16px;
     }
 
 

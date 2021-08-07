@@ -6,7 +6,7 @@ const Container = styled.footer`
   border-radius: var(--main-radius);
   background-color: var(--card-color);
   margin: 0 auto;
-  margin-top: 32px;
+  margin-top: var(--page-padding);
   margin-bottom: var(--page-margin);
 `;
 
