@@ -5,10 +5,15 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  width: 160px;
-  height: 174px;
+  /* height: 184px; */
   background-color: var(--card-color-1);
   border-radius: 16px;
+  transition: all 0.2s ease-in-out;
+
+  /* &:hover {
+    transform: scale(1.02);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  } */
 `;
 
 const Wrapper = styled.div`
@@ -26,9 +31,8 @@ const Wrapper = styled.div`
   }
 `;
 
-const Thumbnail = styled.div`
+const Thumbnail = styled.img`
   width: 100%;
-  height: 60%;
   background-color: var(--highlight-color);
   border-radius: 16px 16px 0 0;
 `;
@@ -36,7 +40,7 @@ const Thumbnail = styled.div`
 const MdCard = ({ title, value, icon, link }) => {
   return (
     <Container>
-      <Thumbnail />
+      <Thumbnail src={icon} />
       <Wrapper>
         <h3>{title}</h3>
         <p>{value}</p>

@@ -3,8 +3,29 @@ import styled from "styled-components";
 import MdCard from "./mdCard";
 
 const Container = styled.div`
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 16px;
+
+  @media (max-width: ${({ theme }) => theme.device.lg}) {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  @media (max-width: 950px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  @media (max-width: 710px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @media (max-width: 540px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (max-width: 350px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 const MdCardList = ({ CardList }) => {
