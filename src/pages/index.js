@@ -10,7 +10,7 @@ import ContentsWrapper from "@styles/contentsWrapper";
 import { FundList } from "@src/constants/fundList";
 import MdCardList from "../components/common/mdCardList";
 import { SalaryList } from "../constants/salaryList";
-import { Link } from "gatsby";
+import ModalLg from "../components/common/modal-lg";
 
 const NaraCard = styled.div`
   display: grid;
@@ -49,14 +49,7 @@ const IndexPage = () => {
         <Wrapper>
           <ContentsWrapper>
             <h2>💵 월급</h2>
-            <Link
-              to="/modal-lg/"
-              state={{
-                modal: true,
-              }}
-            >
-              Login
-            </Link>
+            <ModalLg />
             <MdCardList CardList={SalaryList} />
           </ContentsWrapper>
           <ContentsWrapper>

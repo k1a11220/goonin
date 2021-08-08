@@ -5,6 +5,7 @@ const GlobalStyle = createGlobalStyle`
     font-size: 100%;
     --white: #ffffff;
     --width: 1200px;
+    --modal-width: 500px;
     --main-radius: 25px;
     --top-padding: 64px;
     --side-padding: 40px;
@@ -25,6 +26,10 @@ const GlobalStyle = createGlobalStyle`
       --page-margin: 0;
 
       --page-padding: 16px;
+    }
+
+    @media (max-width: 540px) {
+      --modal-width: 94%;
     }
 
 
