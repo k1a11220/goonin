@@ -23,6 +23,7 @@ const Background = styled.div`
 `;
 
 const Wrapper = styled.div`
+  max-height: 95vh;
   display: flex;
   flex-direction: column;
   width: var(--modal-width);
@@ -57,6 +58,11 @@ const CloseBtn = styled.img`
 
 const TextArea = styled.div`
   padding: 40px 32px;
+  overflow-y: scroll;
+
+  @media (max-width: ${({ theme }) => theme.device.sm}) {
+    padding: 32px 24px;
+  }
 `;
 
 const Title = styled.div`
@@ -110,7 +116,7 @@ const CTABtn = styled.a`
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 56px;
+  min-height: 56px;
   font-size: 16px;
   border: none;
   border-radius: 0 0 16px 16px;
