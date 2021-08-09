@@ -30,8 +30,8 @@ const FundCard = ({ CardList }) => {
         {CardList.map((data) => {
           return (
             <BankCard
-              title={data.bank}
-              detail={data.month_3}
+              title={data.title}
+              price={data.price}
               icon={data.icon}
               link={data.link}
             />

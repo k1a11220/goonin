@@ -11,7 +11,6 @@ const Container = styled.section`
 `;
 
 const FundTable = () => {
-  console.log(FundList);
   return (
     <Container>
       <table>
@@ -28,7 +27,7 @@ const FundTable = () => {
           {FundList.map((data) => {
             return (
               <tr>
-                <td>{data.bank}</td>
+                <td>{data.title}</td>
                 <td>{data.month_1}</td>
                 <td>{data.month_2}</td>
                 <td>{data.month_3}</td>

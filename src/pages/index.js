@@ -49,7 +49,6 @@ const IndexPage = () => {
         <Wrapper>
           <ContentsWrapper>
             <h2>💵 월급</h2>
-            <ModalLg />
             <MdCardList CardList={SalaryList} />
           </ContentsWrapper>
           <ContentsWrapper>

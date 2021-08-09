@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
+import ModalLg from "./modal-lg";
 
 const Link = styled.a`
   text-decoration: none;
@@ -51,17 +52,34 @@ const Icon = styled.img`
   margin-left: 20px;
 `;
 
-const SmCard = ({ title, detail, icon, link }) => {
+const SmCard = ({ title, price, icon, link }) => {
+  const [display, setDisplay] = useState(false);
+  const OpenModal = () => {
+    setDisplay(true);
+  };
+  const CloseModal = () => {
+    setDisplay(false);
+    console.log(display);
+  };
+  console.log(display);
   return (
-    <Link href={link} target="_blank" rel="noopener">
-      <Container>
-        <Icon src={icon} />
-        <TextWrapper>
-          <h4>{title}</h4>
-          <p>{detail}</p>
-        </TextWrapper>
-      </Container>
-    </Link>
+    <>
+      <Link style={{ cursor: "pointer" }} onClick={OpenModal}>
+        <Container>
+          <Icon src={icon} />
+          <TextWrapper>
+            <h4>{title}</h4>
+            <p>{price}</p>
+          </TextWrapper>
+        </Container>
+      </Link>
+      <ModalLg
+        title={title}
+        price={price}
+        display={display}
+        closeModal={CloseModal}
+      />
+    </>
   );
 };
 

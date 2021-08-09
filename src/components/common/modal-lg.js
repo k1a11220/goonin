@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Close from "@src/images/Close.svg";
 
 const Container = styled.section`
+  position: fixed;
   display: ${(props) => props.display};
 `;
 
@@ -115,22 +116,25 @@ const CTA = styled.a`
   }
 `;
 
-const ModalLg = ({ thumbnail, price, contents, link }) => {
-  const [display, setDisplay] = useState("block");
-  const CloseModal = () => {
-    setDisplay("none");
-  };
-  console.log(display);
+const ModalLg = ({
+  thumbnail,
+  title,
+  price,
+  contents,
+  link,
+  display,
+  closeModal,
+}) => {
   return (
-    <Container display={display}>
+    <Container display={display === true ? "block" : "none"}>
       <Background>
         <Wrapper>
           <Thumbnail src={thumbnail} />
-          <CloseBtn onClick={CloseModal} src={Close} alt="closeBtn" />
+          <CloseBtn onClick={closeModal} src={Close} alt="closeBtn" />
           <TextArea>
             <Title>
-              <h3>0플랜 슈퍼히어로</h3>
-              <h4>월 55,000원</h4>
+              <h3>{title}</h3>
+              <h4>{price}</h4>
             </Title>
             <Contents>
               <p>데이터 100GB, 영상 · 부가통화 300분 제공</p>
