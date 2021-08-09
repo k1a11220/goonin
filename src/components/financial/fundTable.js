@@ -32,7 +32,9 @@ const FundTable = () => {
                 <td>{data.month_2}</td>
                 <td>{data.month_3}</td>
                 <td>
-                  <a href={data.link}>홈페이지</a>
+                  <a target="_blank" rel="noreferrer" href={data.link}>
+                    홈페이지
+                  </a>
                 </td>
               </tr>
             );

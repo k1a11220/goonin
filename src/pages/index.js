@@ -40,7 +40,7 @@ const FundTitle = styled.div`
 `;
 
 const IndexPage = () => {
-  const [table, setTable] = useState(true);
+  const [table, setTable] = useState(false);
   return (
     <Layout>
       <Container>

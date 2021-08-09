@@ -20,7 +20,7 @@ const DiscountPage = () => {
             <SmCardList CardList={ComList} />
           </ContentsWrapper>
           <ContentsWrapper>
-            <h2>🎬 문화생활</h2>
+            <h2>🎬 문화</h2>
             <SmCardList CardList={CultureList} />
           </ContentsWrapper>
           <ContentsWrapper>

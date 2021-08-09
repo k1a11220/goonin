@@ -5,8 +5,8 @@ import { Link } from "gatsby";
 import ThemeIcon from "./themeIcon";
 
 const Icon = styled.svg`
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1.25rem;
+  height: 1.25rem;
   fill: var(--color-text);
   transform: translateY(-1px);
   transition: width 0.3s ease;
@@ -45,7 +45,7 @@ const Nav = styled.nav`
 `;
 
 const Logo = styled.div`
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 700;
 
   @media (max-width: ${({ theme }) => theme.device.sm}) {
@@ -65,7 +65,7 @@ const ItemWrapper = styled.ul`
 const Item = styled.li`
   display: flex;
   align-items: center;
-  font-size: 18px;
+  font-size: 17px;
   margin: 0 14px 0 14px;
   @media (max-width: ${({ theme }) => theme.device.sm}) {
     font-size: 16px;
@@ -90,11 +90,11 @@ const Navigation = ({ themeToggler }) => {
         </Logo>
         <ItemWrapper>
           <Item>
-            <Link to="/">금융정보</Link>
+            <Link to="/">금융</Link>
           </Item>
           |
           <Item>
-            <Link to="/discount">할인정보</Link>
+            <Link to="/discount">할인 & 혜택</Link>
           </Item>
           <Item onClick={themeToggler} style={{ cursor: "pointer" }}>
             <Icon version="1.1" x="0px" y="0px" viewBox="0 0 24 24">

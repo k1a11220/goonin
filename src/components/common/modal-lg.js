@@ -79,7 +79,7 @@ const Title = styled.div`
   @media (max-width: ${({ theme }) => theme.device.sm}) {
     flex-direction: column;
     align-items: flex-start;
-    & p {
+    & h3 {
       margin-bottom: 8px;
     }
   }
@@ -105,7 +105,7 @@ const Contents = styled.div`
   }
 `;
 
-const CTA = styled.a`
+const CTABtn = styled.a`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -172,9 +172,9 @@ const ModalLg = ({
               })}
             </Contents>
           </TextArea>
-          <CTA target="_blank" rel="noopener" href={link}>
+          <CTABtn target="_blank" rel="noopener" href={link}>
             <p>확인하기</p>
-          </CTA>
+          </CTABtn>
         </Wrapper>
       </Background>
     </Container>
