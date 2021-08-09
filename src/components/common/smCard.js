@@ -56,12 +56,12 @@ const SmCard = ({ title, price, icon, link }) => {
   const [display, setDisplay] = useState(false);
   const OpenModal = () => {
     setDisplay(true);
+    document.body.style.overflow = "hidden";
   };
   const CloseModal = () => {
     setDisplay(false);
-    console.log(display);
+    document.body.style.overflow = "unset";
   };
-  console.log(display);
   return (
     <>
       <Link style={{ cursor: "pointer" }} onClick={OpenModal}>
