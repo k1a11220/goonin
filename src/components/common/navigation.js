@@ -48,6 +48,11 @@ const Logo = styled.div`
   font-size: 20px;
   font-weight: 700;
 
+  & sup {
+    color: var(--color-text-2);
+    font-weight: 400;
+  }
+
   @media (max-width: ${({ theme }) => theme.device.sm}) {
     font-size: 20px;
   }
@@ -86,7 +91,9 @@ const Navigation = ({ themeToggler }) => {
     <Nav>
       <div>
         <Logo>
-          <Link to="/">현명한 군복무</Link>
+          <Link to="/">
+            군복무 가이드 <sup>beta</sup>
+          </Link>
         </Logo>
         <ItemWrapper>
           <Item>
@@ -94,7 +101,7 @@ const Navigation = ({ themeToggler }) => {
           </Item>
           |
           <Item>
-            <Link to="/discount">할인 & 혜택</Link>
+            <Link to="/discount">혜택</Link>
           </Item>
           <Item onClick={themeToggler} style={{ cursor: "pointer" }}>
             <Icon version="1.1" x="0px" y="0px" viewBox="0 0 24 24">

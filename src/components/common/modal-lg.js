@@ -12,7 +12,7 @@ const Background = styled.div`
   display: flex;
   align-items: center;
   position: fixed;
-  height: 100vh;
+  /* height: 100vh; */
   top: 0;
   right: 0;
   bottom: 0;
