@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
 import Close from "@src/images/Close.svg";
 
 const Container = styled.section`
   position: fixed;
   display: ${(props) => props.display};
+  z-index: 99;
 `;
 
 const Background = styled.div`
@@ -16,7 +17,6 @@ const Background = styled.div`
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 99;
   background-color: rgba(0, 0, 0, 0.6);
   overflow-y: auto;
   overflow-x: hidden;
@@ -36,7 +36,7 @@ const Thumbnail = styled.img`
   width: 100%;
   height: 260px;
   border-radius: 16px 16px 0 0;
-
+  object-fit: cover;
   @media (max-width: ${({ theme }) => theme.device.sm}) {
     height: 220px;
   }
@@ -70,15 +70,16 @@ const Title = styled.div`
     font-size: 24px;
   }
 
-  & h4 {
+  & p {
+    font-weight: 600;
     font-size: 18px;
-    color: var(--highlight-color);
+    color: var(--color-text-2);
   }
 
   @media (max-width: ${({ theme }) => theme.device.sm}) {
     flex-direction: column;
     align-items: flex-start;
-    & h3 {
+    & p {
       margin-bottom: 8px;
     }
   }
@@ -96,6 +97,12 @@ const Contents = styled.div`
   & p:last-of-type {
     margin-bottom: 0;
   }
+
+  & h4 {
+    font-size: 20px;
+    margin-bottom: 14px;
+    color: var(--color-text);
+  }
 `;
 
 const CTA = styled.a`
@@ -109,6 +116,7 @@ const CTA = styled.a`
   border-radius: 0 0 16px 16px;
   background-color: var(--highlight-color);
   cursor: pointer;
+  text-decoration: none;
 
   p {
     color: var(--color-text-1);
@@ -117,14 +125,29 @@ const CTA = styled.a`
 `;
 
 const ModalLg = ({
-  thumbnail,
   title,
   price,
-  contents,
+  detail,
+  thumbnail,
   link,
   display,
   closeModal,
 }) => {
+  const bold = ["우대금리 조건"];
+
+  const refinedContents = detail.replace(bold, "");
+  const refinedDetail = refinedContents.split("<br/>");
+  const refinedTitle = detail.match(bold);
+
+  const refinedData = [
+    {
+      refinedDetail: refinedDetail,
+      refinedTitle: refinedTitle,
+    },
+  ];
+
+  console.log(refinedData);
+
   return (
     <Container display={display === true ? "block" : "none"}>
       <Background>
@@ -134,15 +157,19 @@ const ModalLg = ({
           <TextArea>
             <Title>
               <h3>{title}</h3>
-              <h4>{price}</h4>
+              <p>{price}</p>
             </Title>
             <Contents>
-              <p>데이터 100GB, 영상 · 부가통화 300분 제공</p>
-              <p>T가족모아 데이터 이용 혜택 (단, 받기만 가능)</p>
-              <p>
-                'T멤버십 VIP' 또는 'FLO 앤 데이터와 wavve 앤 데이터 모두 70%
-                할인 (wavve 앤 데이터 플러스 가능)' 중 선택
-              </p>
+              {refinedData.map((data) => {
+                return (
+                  <>
+                    <h4>{data.refinedTitle}</h4>
+                    {data.refinedDetail.map((data) => {
+                      return <p>{data}</p>;
+                    })}
+                  </>
+                );
+              })}
             </Contents>
           </TextArea>
           <CTA target="_blank" rel="noopener" href={link}>

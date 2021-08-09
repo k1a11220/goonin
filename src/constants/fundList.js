@@ -2,8 +2,11 @@ export const FundList = [
   {
     title: "광주은행",
     price: "최대 5.20%",
+    detail:
+      "우대금리 조건 <br/> ▷ 최대 0.5%p 우대금리 적용 <br/> (1) (적금 가입일~만기 전전월말 말일)요구불예금 최근 3개월 평잔이 30만원 이상인 경우 : 0.10%p <br/> (2) (적금 가입일~만기 전전월말 말일)신용카드(또는 체크카드) 사용실적 100만원 이상인 경우 : 0.10%p <br/> (3)요구불예금에서 이 예금으로 적립액 자동이체 설정하여 5회 이상 입금된 경우 : 0.10%p <br/> (4)(적금 가입일~만기 전일)요구불계좌에서 전자금융을 이용한 당,타행 출금이체 거래실적 5회 이상인 경우 : 0.20%p",
+    thumbnail: "https://i.imgur.com/A7ew0Hb.png",
     icon: "https://i.imgur.com/1SjkQIc.png",
-    link: "",
+    link: "https://www.kjbank.com/ib20/mnu/FPMDPTR030100",
     month_1: "4.00%",
     month_2: "4.50%",
     month_3: "5.20%",
@@ -11,26 +14,35 @@ export const FundList = [
   {
     title: "NH농협은행",
     price: "최대 5.00%",
+    detail:
+      "우대금리 조건 <br/> ▷ (적금 가입월~만기 전전월말) 은행에서 발급한 NH농협 개인신용·체크카드(채움) 월평균 10만원이상 이용실적 : 0.20%p <br/> ▷ (적금 가입월~만기 전전월말) 농협은행 주택청약종합저축(청년우대형 포함) 가입 및 5회이상 납입실적과 보유 시 : 0.30%p",
+    thumbnail: "https://i.imgur.com/ZQjljPv.png",
     icon: "https://i.imgur.com/lDGHW0N.png",
-    link: "",
+    link: "https://smartmarket.nonghyup.com/servlet/SFSD0130R.view",
     month_1: "3.00%",
     month_2: "4.00%",
     month_3: "5.00%",
   },
   {
     title: "신한은행",
+    detail:
+      "우대금리 조건 <br/> ▷ 우대이자율: 최고 연 0.70% <br/> ① 주택청약 우대이자율(연 0.30%) <br/> ② 신한카드 우대이자율(연 0.20%) <br/> ③ 자동이체 우대이자율(연 0.20%)",
+    thumbnail: "https://i.imgur.com/Z8kA8ZH.png",
     icon: "https://i.imgur.com/llOPDaz.png",
     price: "최대 5.00%",
-    link: "",
+    link: "https://bank.shinhan.com/index.jsp#020102010110",
     month_1: "4.00%",
     month_2: "4.50%",
     month_3: "5.00%",
   },
   {
     title: "우리은행",
-    icon: "https://i.imgur.com/RO9qPPo.png",
     price: "최대 5.00%",
-    link: "",
+    detail:
+      "우대금리 조건 <br/> ▷ 아래 조건을 충족하는 경우 최대 0.5%p 우대금리 적용 <br/> (1) 우리은행 입출식 계좌에서 매월 자동이체를 통해 실적인정기간의 1/2 기간 이상 이 적금으로 적립한 경우 - 연 0.3%p <br/> (2) 실적인정기간 동안 우리카드(체크/신용) 결제계좌를 우리은행 입출식 계좌로 지정한 후, 매월 카드 결제실적 보유 - 연0.1%p <br/> (3) 이 적금의 신규 시점에 우리은행에서 가입한 '주택청약종합저축' 상품을 보유하고 있는 경우 - 연 0.1%p",
+    thumbnail: "https://i.imgur.com/zOEjGDP.png",
+    icon: "https://i.imgur.com/RO9qPPo.png",
+    link: "https://spot.wooribank.com/pot/Dream?withyou=PODEP0021&cc=c007095:c009166;c012263:c012399&PRD_CD=P010002283&PRD_YN=Y",
     month_1: "3.50%",
     month_2: "4.00%",
     month_3: "5.00%",
@@ -38,8 +50,11 @@ export const FundList = [
   {
     title: "하나은행",
     price: "최대 5.00%",
+    detail:
+      "우대금리 조건 <br/> ▷ (우대금리 : 최고 연 0.5%) <br/> - 당행 주택청약종합저축(청년우대형포함) 보유시 연 0.3% 우대 <br/> - 당행 입출금통장을 통해 3회이상 군급여 입금실적이 있거나,하나카드사의 카드(신용/체크)결제 실적이 3회 이상 있을 경우 연 0.2%우대 (군급여이체 및 카드결제 실적은 월1회만 인정하며, 군급여이체실적은 국군재정관리단을 통한 이체에 한정)",
+    thumbnail: "https://i.imgur.com/0AQJWee.png",
     icon: "https://i.imgur.com/0TwOFgZ.png",
-    link: "",
+    link: "https://www.kebhana.com/cont/mall/mall08/mall0801/mall080102/1456099_115157.jsp",
     month_1: "3.50%",
     month_2: "4.00%",
     month_3: "5.00%",
@@ -47,8 +62,11 @@ export const FundList = [
   {
     title: "IBK기업은행",
     price: "최대 5.00%",
+    detail:
+      "우대금리 조건 <br/> ① 당행입출금식 계좌로 급여이체 (10 만원 이상 ) 6 회이상 실적 ( 단 , 월 1 회 이상 급여실적이 있는경우 1 회로 간주함 ) 이 있거나 , 결제계좌가 당행입출금식 계좌인 당행 신용 ( 체크 ) 카드 이용실적 ( 단 , 매출표 접수기준으로실적을 인정하며 , 현금서비스실적은 제외함 ) 이 100 만원 이상인 경우 : 연 0.2%p <br/> ② 당행 주택청약종합저축 ( 청년우대형 포함 ) 을 신규한 경우 : 연 0.2%p <br/> ③ 당행 스마트뱅킹 이체실적 1 회 이상 있는 경우 : 연 0.1%p",
+    thumbnail: "https://i.imgur.com/bbyQZHC.png",
     icon: "https://i.imgur.com/TozvbDZ.png",
-    link: "",
+    link: "https://mybank.ibk.co.kr/uib/jsp/guest/ntr/ntr70/ntr7010/PNTR701000_i2.jsp?lncd=01&grcd=21&tmcd=121&pdcd=0112&wvcd=***********&i_trns_biz_kncd=IBK%EC%9E%A5%EB%B3%91%EB%82%B4%EC%9D%BC%EC%A4%80%EB%B9%84%EC%A0%81%EA%B8%88",
     month_1: "4.00%",
     month_2: "4.50%",
     month_3: "5.00%",
@@ -56,8 +74,11 @@ export const FundList = [
   {
     title: "KB국민은행",
     price: "최대 5.00%",
+    detail:
+      "우대금리 조건 <br/> ▷ 급여이체실적 - 적금 신규월 초일부터 만기일 기준 전전월 말일까지 고객이 가입한 적금 계약기간(월 환산)의 2/3에 해당하는 기간 동안 고객의 KB국민은행 입출금통장으로 급여이체 실적이 매월 10만원 이상인 경우 0.3%p 제공 <br/> ▷ 주택청약종합저축계좌보유 - 적금 만기일 기준 전전월 말일을 기준으로, 고객이 KB국민은행 주택청약종합저축(청년 우대형 주택청약종합저축 포함) 계좌를 보유한 경우 0.2%p 제공",
+    thumbnail: "https://i.imgur.com/qji9CqS.png",
     icon: "https://i.imgur.com/yQOac30.png",
-    link: "",
+    link: "https://obank.kbstar.com/quics?page=C016613&cc=b061496:b061645&%EB%B8%8C%EB%9E%9C%EB%93%9C%EC%83%81%ED%92%88%EC%BD%94%EB%93%9C=DP01000939&%EB%85%B8%EB%93%9C%EC%BD%94%EB%93%9C=00007&prcode=DP01000939",
     month_1: "3.50%",
     month_2: "4.50%",
     month_3: "5.00%",
@@ -65,8 +86,10 @@ export const FundList = [
   {
     title: "DGB대구은행",
     price: "최대 5.00%",
+    detail: "우대금리 조건 <br/> ▷ 해당사항 없음",
+    thumbnail: "https://i.imgur.com/BtcdROV.png",
     icon: "https://i.imgur.com/FEJtLn5.png",
-    link: "",
+    link: "https://www.dgb.co.kr/hmp/bbs/bbs_ebz_file_down_view.jsp?filePath=/upload/newbbs/FNM001/&fileName=%EC%83%81%ED%92%88%EC%84%A4%EB%AA%85%EC%84%9C_%EC%A0%81%EB%A6%BD%EC%8B%9D_DGB%EC%9E%A5%EB%B3%91%EB%82%B4%EC%9D%BC%EC%A4%80%EB%B9%84%EC%A0%81%EA%B8%88.pdf&realName=201811020912525114866212.pdf",
     month_1: "4.00%",
     month_2: "4.05%",
     month_3: "5.00%",
@@ -74,8 +97,10 @@ export const FundList = [
   {
     title: "제주은행",
     price: "최대 5.00%",
+    detail: "우대금리 조건 <br/> ▷ 해당사항 없음",
+    thumbnail: "https://i.imgur.com/juigMYn.png",
     icon: "https://i.imgur.com/HJNRfIl.png",
-    link: "",
+    link: "https://www.e-jejubank.com/HomeFMDeposit.do",
     month_1: "4.00%",
     month_2: "4.50%",
     month_3: "5.00%",
@@ -83,8 +108,11 @@ export const FundList = [
   {
     title: "전북은행",
     price: "최대 5.00%",
+    detail:
+      "우대금리 조건 <br/> ▷ 계약기간별 금리조건 6개월 이상 ~ 12개월 미만 : 연 3.60% <br/> 12개월 이상 ~ 15개월 미만 : 연 4.10% <br/> 15개월 이상 ~ 24개월 미만 : 연 5.00%",
+    thumbnail: "https://i.imgur.com/kNXysS6.png",
     icon: "https://i.imgur.com/cTUwzxD.png",
-    link: "",
+    link: "https://www.jbbank.co.kr/",
     month_1: "3.60%",
     month_2: "4.10%",
     month_3: "5.00%",
@@ -92,8 +120,11 @@ export const FundList = [
   {
     title: "우체국",
     price: "최대 5.00%",
+    detail:
+      "우대금리 조건 <br/> ▷ 자동이체 0.2% <br/> ▷ 체크카드 0.2% ▷ <br/> 첫거래 0.1%",
+    thumbnail: "https://i.imgur.com/3Z3z5Kj.png",
     icon: "https://i.imgur.com/STfCLaX.png",
-    link: "",
+    link: "http://m.epostbank.kr/mwib0102.screen?ibnkGoodCode=1000000092&class_cd=13&good_dvsn_code=10",
     month_1: "4.00%",
     month_2: "4.50%",
     month_3: "5.00%",
@@ -101,8 +132,10 @@ export const FundList = [
   {
     title: "SH수협은행",
     price: "최대 4.50%",
+    detail: "우대금리 조건 <br/> ▷ 해당사항 없음",
+    thumbnail: "https://i.imgur.com/65Ld4Jm.png",
     icon: "https://i.imgur.com/ZpsTCza.png",
-    link: "",
+    link: "https://www.suhyup-bank.com/",
     month_1: "2.50%",
     month_2: "3.50%",
     month_3: "4.50%",
@@ -110,8 +143,11 @@ export const FundList = [
   {
     title: "BNK부산은행",
     price: "최대 4.50%",
+    detail:
+      "우대금리 조건 <br /> ▷ 만기 시 본인명의 주택청약종합저축 보유 : 0.10%",
+    thumbnail: "https://i.imgur.com/zwpURcR.png",
     icon: "https://i.imgur.com/RX1V26T.png",
-    link: "",
+    link: "https://www.busanbank.co.kr/ib20/mnu/BHP00001",
     month_1: "3.50%",
     month_2: "4.00%",
     month_3: "4.50%",
@@ -119,8 +155,11 @@ export const FundList = [
   {
     title: "BNK경남은행",
     price: "최대 4.50%",
+    detail:
+      "우대금리 조건 <br/> ▷ 주택청약종합저축 보유에 따른 우대이율 : 0.1% <br/> - 가입일 현재 예금주 본인명의 경남은행 '주택청약종합저축(청년우대형 주택청약종합저축 포함)'을 보유중인 경우",
+    thumbnail: "https://i.imgur.com/NmpZeFp.png",
     icon: "https://i.imgur.com/0ZAme5b.png",
-    link: "",
+    link: "https://www.knbank.co.kr/ib20/mnu/BHP000000000001",
     month_1: "3.10%",
     month_2: "3.90%",
     month_3: "4.50%",

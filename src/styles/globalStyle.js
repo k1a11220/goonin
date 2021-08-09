@@ -49,7 +49,7 @@ const GlobalStyle = createGlobalStyle`
 
     body.dark {
         --color-text: #e6e6e6;
-        --color-text-1: #1d1d1f;
+        --color-text-1: #62B1FF;
         --color-text-2: #3282B8;
         --color-text-3: #5b5b5b;
         --color-text-4: #e6e6e6;
@@ -58,7 +58,7 @@ const GlobalStyle = createGlobalStyle`
         --card-color-1: #2c2c2c;
         --card-color-2: #1c1c1c;
         --border: rgba(207, 207, 207, 0.2);
-        --highlight-color: #DDDDDD;
+        --highlight-color: #203E5C;
     }
   }
 

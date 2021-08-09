@@ -52,7 +52,7 @@ const Icon = styled.img`
   margin-left: 20px;
 `;
 
-const SmCard = ({ title, price, icon, link }) => {
+const SmCard = ({ title, price, detail, thumbnail, icon, link }) => {
   const [display, setDisplay] = useState(false);
   const OpenModal = () => {
     setDisplay(true);
@@ -76,6 +76,9 @@ const SmCard = ({ title, price, icon, link }) => {
       <ModalLg
         title={title}
         price={price}
+        detail={detail}
+        thumbnail={thumbnail}
+        link={link}
         display={display}
         closeModal={CloseModal}
       />

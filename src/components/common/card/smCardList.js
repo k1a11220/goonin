@@ -31,6 +31,8 @@ const SmCardList = ({ CardList }) => {
               <SmCard
                 title={data.title}
                 price={data.price}
+                detail={data.detail}
+                thumbnail={data.thumbnail}
                 icon={data.icon}
                 link={data.link}
               />
