@@ -61,17 +61,29 @@ const Wrapper = styled.div`
     font-size: 14px;
   }
 
-  & button {
-    position: relative;
-    cursor: pointer;
-    width: 94px;
-    height: 30px;
-    border: none;
-    border-radius: 8px;
-    background-color: var(--highlight-color);
-    color: var(--color-text-1);
+  & a {
+    color: var(--color-text-4);
+    text-decoration: none;
+  }
+`;
+
+const ReportBtn = styled.a`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  width: 94px;
+  height: 30px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--highlight-color);
+  margin-top: 16px;
+  text-decoration: none;
+
+  & p {
     font-size: 12px;
-    margin-top: 16px;
+    color: var(--color-text-1);
   }
 `;
 
@@ -89,21 +101,35 @@ const Footer = () => {
         <ContentWrapper>
           <h3>신성한 병역의 의무를 수행하는 모든 청춘을 응원합니다.</h3>
           <p>
-            본 사이트에서 제공하는 정보는 민간이 취합한 자료이므로 공식자료로
-            사용될 수 없습니다. 또한 제공하는 정보 사용/공유로 인해 발생된
-            문제의 책임은 전적으로 사용자에게 있습니다.
+            본 사이트에서 제공하는 정보는 민간이 제작한 자료이므로 공식 자료로
+            사용될 수 없습니다. 또한 제공하는 정보의 사용/공유로 인해 발생된
+            문제의 책임은 사용자에게 있습니다.
           </p>
           <h4>
-            개발자 <strong>손범수</strong> |
-            <strong> beskar.son@gmail.com</strong>
+            개발자 <strong>손범수 I </strong>
+            <strong>
+              <a
+                target="_blank"
+                rel="noopener"
+                href="mailto:beskar.son@gmail.com"
+              >
+                beskar.son@gmail.com
+              </a>
+            </strong>
           </h4>
         </ContentWrapper>
         <ContentWrapper>
           <p>
-            이 외에도 군인들에게 제공하는 기타 혜택, 정보등이 있으면 제보
+            정보 오류 혹은 군인들에게 제공되는 기타 혜택, 정보 등이 있으면 제보
             부탁드립니다.
           </p>
-          <button>제보하기</button>
+          <ReportBtn
+            target="_blank"
+            rel="noopener"
+            href="mailto:beskar.son@gmail.com"
+          >
+            <p>제보하기</p>
+          </ReportBtn>
         </ContentWrapper>
       </Wrapper>
     </Container>

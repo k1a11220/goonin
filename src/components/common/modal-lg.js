@@ -57,11 +57,11 @@ const CloseBtn = styled.img`
 `;
 
 const TextArea = styled.div`
-  padding: 40px 32px;
+  padding: 32px 24px;
   overflow-y: scroll;
 
   @media (max-width: ${({ theme }) => theme.device.sm}) {
-    padding: 32px 24px;
+    /* padding: 32px 24px; */
   }
 `;
 

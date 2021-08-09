@@ -143,8 +143,7 @@ export const FundList = [
   {
     title: "BNK부산은행",
     price: "최대 4.50%",
-    detail:
-      "우대금리 조건 <br /> ▷ 만기 시 본인명의 주택청약종합저축 보유 : 0.10%",
+    detail: "우대금리 조건 ▷ 만기 시 본인명의 주택청약종합저축 보유 : 0.10%",
     thumbnail: "https://i.imgur.com/zwpURcR.png",
     icon: "https://i.imgur.com/RX1V26T.png",
     link: "https://www.busanbank.co.kr/ib20/mnu/BHP00001",
