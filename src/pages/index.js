@@ -1,16 +1,15 @@
 import React, { useState } from "react";
 import Layout from "@layout/layout";
 import styled from "styled-components";
-import LgCard from "@components/common/lgCard";
+import LgCard from "@components/common/card/lgCard";
+import MdCardList from "@components/common/card/mdCardList";
 import FundTable from "@components/financial/fundTable";
 import FundCard from "@components/financial/fundCard";
 import Container from "@styles/container";
 import Wrapper from "@styles/wrapper";
 import ContentsWrapper from "@styles/contentsWrapper";
 import { FundList } from "@src/constants/fundList";
-import MdCardList from "../components/common/mdCardList";
 import { SalaryList } from "../constants/salaryList";
-import ModalLg from "../components/common/modal-lg";
 
 const NaraCard = styled.div`
   display: grid;

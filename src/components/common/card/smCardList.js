@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import SmCard from "@components/common/smCard";
+import SmCard from "./smCard";
 
 const Container = styled.div``;
 const Wrapper = styled.div`

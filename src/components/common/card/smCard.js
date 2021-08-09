@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import ModalLg from "./modal-lg";
+import ModalLg from "../modal-lg";
 
 const Link = styled.a`
   text-decoration: none;

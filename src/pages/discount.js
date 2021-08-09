@@ -4,7 +4,7 @@ import Container from "@styles/container";
 import ContentsWrapper from "@styles/contentsWrapper";
 import Wrapper from "@styles/wrapper";
 
-import SmCardList from "../components/common/smCardList";
+import SmCardList from "../components/common/card/smCardList";
 
 import { PlayList } from "../constants/playList";
 import { CultureList } from "../constants/cultureList";
