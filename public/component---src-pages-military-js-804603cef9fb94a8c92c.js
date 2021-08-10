@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkgoonin=self.webpackChunkgoonin||[]).push([[809],{5172:function(e,n,l){l.r(n);var t=l(7294),u=l(4559);n.default=function(){return t.createElement(u.Z,null,t.createElement("main",null,t.createElement("h1",null,"MilitaryPage")))}}}]);
+//# sourceMappingURL=component---src-pages-military-js-804603cef9fb94a8c92c.js.map
