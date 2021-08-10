@@ -10,6 +10,7 @@ import ContentsWrapper from "@styles/contentsWrapper";
 import { FundList } from "@src/constants/fundList";
 import { SalaryList } from "../constants/salaryList";
 import SmCardList from "../components/common/card/smCardList";
+import SEO from "../components/seo";
 
 const NaraCard = styled.div`
   display: grid;
@@ -43,6 +44,11 @@ const IndexPage = () => {
   const [table, setTable] = useState(false);
   return (
     <Layout>
+      <SEO
+        title="군복무 가이드 | 금융정보"
+        desc="군인들에게 제공되는 금융혜택 & 상품입니다."
+        defer={false}
+      />
       <Container>
         <Wrapper>
           <ContentsWrapper>

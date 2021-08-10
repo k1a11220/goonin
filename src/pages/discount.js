@@ -10,10 +10,16 @@ import { PlayList } from "../constants/playList";
 import { CultureList } from "../constants/cultureList";
 import { ComList } from "../constants/comList";
 import { RestaurantsList } from "../constants/restaurantsList";
+import SEO from "@components/seo";
 
 const DiscountPage = () => {
   return (
     <Layout>
+      <SEO
+        title="군복무 가이드 | 혜택정보"
+        desc="군인들에게 제공되는 각종 혜택, 할인입니다."
+        defer={false}
+      />
       <Container>
         <Wrapper>
           <ContentsWrapper>
