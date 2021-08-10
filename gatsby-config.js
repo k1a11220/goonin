@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
+    siteUrl: "https://www.goonin.kr",
     title: "goonin",
   },
   plugins: [
@@ -17,6 +17,7 @@ module.exports = {
         extensions: ["js"],
       },
     },
+    `gatsby-plugin-netlify`,
     "gatsby-plugin-styled-components",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
