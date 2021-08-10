@@ -14,7 +14,7 @@ const Container = styled.div`
   /* width: 268px; */
   height: 90px;
   background-color: var(--card-color-1);
-  border-radius: 8px;
+  border-radius: var(--card-radius);
   display: flex;
   align-items: center;
   transition: all 0.2s ease-in-out;

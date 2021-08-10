@@ -7,6 +7,7 @@ const GlobalStyle = createGlobalStyle`
     --width: 1200px;
     --modal-width: 500px;
     --main-radius: 25px;
+    --card-radius: 16px;
     --top-padding: 64px;
     --side-padding: 40px;
 

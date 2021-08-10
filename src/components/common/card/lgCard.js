@@ -12,7 +12,7 @@ const Container = styled.div`
   height: 208px;
   background-color: var(--card-color-2);
   border: 1px solid var(--border);
-  border-radius: 8px;
+  border-radius: var(--card-radius);
   transition: all 0.2s ease-in-out;
 
   &:hover {

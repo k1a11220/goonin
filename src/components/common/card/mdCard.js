@@ -7,7 +7,7 @@ const Container = styled.div`
   align-items: flex-end;
   /* height: 184px; */
   background-color: var(--card-color-1);
-  border-radius: 16px;
+  border-radius: var(--card-radius);
   transition: all 0.2s ease-in-out;
 
   /* &:hover {
