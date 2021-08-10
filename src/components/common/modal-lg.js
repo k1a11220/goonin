@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Close from "@src/images/Close.svg";
+import Close from "@src/images/close.svg";
 
 const Container = styled.section`
   position: fixed;
