@@ -9,6 +9,7 @@ import SmCardList from "../components/common/card/smCardList";
 import { PlayList } from "../constants/playList";
 import { CultureList } from "../constants/cultureList";
 import { ComList } from "../constants/comList";
+import { RestaurantsList } from "../constants/restaurantsList";
 
 const DiscountPage = () => {
   return (
@@ -26,6 +27,10 @@ const DiscountPage = () => {
           <ContentsWrapper>
             <h2>🎡 여행 & 액티비티</h2>
             <SmCardList CardList={PlayList} />
+          </ContentsWrapper>
+          <ContentsWrapper>
+            <h2>🍽 식당</h2>
+            <SmCardList CardList={RestaurantsList} />
           </ContentsWrapper>
         </Wrapper>
       </Container>
