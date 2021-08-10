@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkgoonin=self.webpackChunkgoonin||[]).push([[548],{635:function(e,n,l){l.r(n);var t=l(7294),a=l(4559);n.default=function(){return t.createElement(a.Z,null,t.createElement("main",null,t.createElement("h1",null,"FinancialPage")))}}}]);
+//# sourceMappingURL=component---src-pages-financial-js-df72a374099f46b2359b.js.map
