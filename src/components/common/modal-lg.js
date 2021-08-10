@@ -57,11 +57,11 @@ const CloseBtn = styled.img`
 `;
 
 const TextArea = styled.div`
-  padding: 32px 24px;
+  padding: 40px 32px;
   overflow-y: scroll;
 
   @media (max-width: ${({ theme }) => theme.device.sm}) {
-    /* padding: 32px 24px; */
+    padding: 32px 24px;
   }
 `;
 
@@ -151,9 +151,6 @@ const ModalLg = ({
       refinedTitle: refinedTitle,
     },
   ];
-
-  console.log(refinedData);
-
   return (
     <Container display={display === true ? "block" : "none"}>
       <Background>

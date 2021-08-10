@@ -110,7 +110,7 @@ const Footer = () => {
             <strong>
               <a
                 target="_blank"
-                rel="noopener"
+                rel="noreferrer"
                 href="mailto:beskar.son@gmail.com"
               >
                 beskar.son@gmail.com
