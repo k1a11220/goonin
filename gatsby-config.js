@@ -5,6 +5,14 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-plugin-gtag`,
+      options: {
+        trackingId: `G-5NX75K2JR0`, // 측정 ID
+        head: false, // head에 tracking script를 넣고 싶다면 true로 변경
+        anonymize: true,
+      },
+    },
+    {
       resolve: `gatsby-plugin-alias-imports`,
       options: {
         alias: {
