@@ -25,10 +25,11 @@ const SmCardList = ({ CardList }) => {
   return (
     <Container>
       <Wrapper>
-        {CardList.map((data) => {
+        {CardList.map((data, index) => {
           return (
             <>
               <SmCard
+                key={index}
                 title={data.title}
                 price={data.price}
                 detail={data.detail}

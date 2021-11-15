@@ -6,8 +6,9 @@ import styledTheme from "@styles/theme";
 import GlobalStyle from "@styles/globalStyle";
 import Navigation from "@components/common/navigation";
 import Footer from "@components/common/footer";
+import TabNavigation from "../components/common/TabNavigation/TabNavigation";
 
-const Layout = ({ children }) => {
+const Layout = ({ path, children }) => {
   const [theme, themeToggler] = useTheme();
 
   return (
@@ -17,6 +18,7 @@ const Layout = ({ children }) => {
         <Navigation themeToggler={themeToggler} />
         {children}
         <Footer />
+        <TabNavigation path={path} />
       </ThemeContext.Provider>
     </ThemeProvider>
   );

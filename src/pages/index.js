@@ -40,10 +40,10 @@ const FundTitle = styled.div`
   }
 `;
 
-const IndexPage = () => {
+const IndexPage = (props) => {
   const [table, setTable] = useState(false);
   return (
-    <Layout>
+    <Layout path={props.uri}>
       <SEO
         title="군복무 가이드 | 금융정보"
         desc="군인들에게 제공되는 금융혜택 & 상품입니다."

@@ -31,9 +31,10 @@ const Container = styled.div`
 const MdCardList = ({ CardList }) => {
   return (
     <Container>
-      {CardList.map((data) => {
+      {CardList.map((data, index) => {
         return (
           <MdCard
+            key={index}
             title={data.title}
             value={data.value}
             icon={data.icon}

@@ -40,7 +40,7 @@ const GlobalStyle = createGlobalStyle`
         --color-text-2: #326bbf;
         --color-text-3: #c1c1c1;
         --color-text-4: #5b5b5b;
-        --bg-color: #EBEBEB;
+        --bg-color: rgba(246, 246, 246, 0.5);
         --card-color: #ffffff;
         --card-color-1: #F2F3F5;
         --card-color-2: #ffffff;
