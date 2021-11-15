@@ -1,7 +1,7 @@
 export const CultureList = [
   {
     title: "롯데시네마",
-    price: "2D: 7,000원 | 3D: 8,000원",
+    price: "2D영화 4,000원 할인",
     detail:
       "휴가증 지참 필수 <br/> 일반 2D 영화 주중 7천원, 주말 8천원(동반3인) <br/> 3D 영화 주중 8천원 주말 9천원(동반3인) <br/> 매점 콤보세트 2천원 할인(더블콤보 4천원 할인)",
     thumbnail: "https://i.imgur.com/LJfzOF5.png",

@@ -12,6 +12,7 @@ import { CultureList } from "../constants/cultureList";
 import { ComList } from "../constants/comList";
 import { RestaurantsList } from "../constants/restaurantsList";
 import SEO from "@components/seo";
+import TabIndicator from "../components/common/TabIndicator/TabIndicator";
 
 const DiscountPage = (props) => {
   return (
@@ -22,9 +23,10 @@ const DiscountPage = (props) => {
         defer={false}
       />
       <Container>
+        <TabIndicator />
         <Wrapper>
           <ContentsWrapper>
-            <h2>📱 통신</h2>
+            {/* <h2>📱 통신</h2> */}
             <SmCardList CardList={ComList} />
           </ContentsWrapper>
           <ContentsWrapper>

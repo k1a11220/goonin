@@ -4,7 +4,7 @@ const GlobalStyle = createGlobalStyle`
   :root {
     font-size: 100%;
     --white: #ffffff;
-    --width: 700px;
+    --width: 800px;
     --modal-width: 500px;
     --main-radius: 25px;
     --card-radius: 16px;
@@ -15,11 +15,7 @@ const GlobalStyle = createGlobalStyle`
 
     --page-padding: 32px;
 
-    @media (max-width: 1200px) {
-      --width: 95%
-    }
-
-    @media (max-width: 830px) {
+    @media (max-width: 800px) {
       --main-radius: 0;
       --top-padding: 56px;
       --side-padding: 20px;
