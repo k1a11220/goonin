@@ -37,7 +37,7 @@ const GlobalStyle = createGlobalStyle`
     body.light {
         --color-text: #1d1d1d;
         --color-text-1: #ffffff;
-        --color-text-2: #326bbf;
+        --color-text-2: #4191FD;
         --color-text-3: #c1c1c1;
         --color-text-4: #5b5b5b;
         --bg-color: rgba(246, 246, 246, 0.5);

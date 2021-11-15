@@ -12,11 +12,12 @@ const Link = styled.a`
 
 const Container = styled.div`
   /* width: 268px; */
-  height: 90px;
+  height: 92px;
   background-color: var(--card-color-1);
   border-radius: var(--card-radius);
   display: flex;
   align-items: center;
+  justify-content: space-between;
   transition: all 0.2s ease-in-out;
 
   &:nth-of-type(4n) {
@@ -30,26 +31,29 @@ const Container = styled.div`
 `;
 
 const TextWrapper = styled.div`
-  margin-left: 16px;
-  margin-right: 20px;
+  margin-left: 26px;
 
   & h4 {
+    font-size: 14px;
     font-weight: 500;
+    color: #717989;
+    margin-bottom: 3px;
   }
 
   & p {
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 600;
     color: var(--color-text-2);
   }
 `;
 
 const Icon = styled.img`
-  width: 40px;
-  height: 40px;
-  border-radius: 20px;
+  width: 100px;
+  height: 60px;
+  border-radius: 10px;
   background-color: var(--white);
-  margin-left: 20px;
+  margin-right: 16px;
+  object-fit: contain;
 `;
 
 const SmCard = ({ title, price, detail, thumbnail, icon, link }) => {
@@ -66,11 +70,11 @@ const SmCard = ({ title, price, detail, thumbnail, icon, link }) => {
     <>
       <Link style={{ cursor: "pointer" }} onClick={OpenModal}>
         <Container>
-          <Icon src={icon} />
           <TextWrapper>
             <h4>{title}</h4>
             <p>{price}</p>
           </TextWrapper>
+          <Icon src={icon} />
         </Container>
       </Link>
       <ModalLg
