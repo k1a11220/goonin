@@ -19,9 +19,13 @@ const Container = styled.div`
 
 const IconContainer = styled.div`
   display: flex;
-  width: calc(100vw - 48px);
+  width: 700px;
   margin: 0 auto;
   justify-content: space-between;
+
+  @media (max-width: ${({ theme }) => theme.device.md}) {
+    width: calc(100vw - 48px);
+  }
 `;
 
 const IconBox = styled.div`

@@ -4,7 +4,7 @@ const GlobalStyle = createGlobalStyle`
   :root {
     font-size: 100%;
     --white: #ffffff;
-    --width: 1200px;
+    --width: 700px;
     --modal-width: 500px;
     --main-radius: 25px;
     --card-radius: 16px;
@@ -42,7 +42,7 @@ const GlobalStyle = createGlobalStyle`
         --color-text-4: #5b5b5b;
         --bg-color: rgba(246, 246, 246, 0.5);
         --card-color: #ffffff;
-        --card-color-1: #F2F3F5;
+        --card-color-1: #F8F8F8;
         --card-color-2: #ffffff;
         --border: #cacaca;
         --highlight-color: #326BBF;
