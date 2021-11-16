@@ -1,16 +1,16 @@
-import React, { useRef } from "react";
+import React from "react";
 import styled from "styled-components";
 import CompasIcon from "./Compas.svg";
 import MoreIcon from "./More.svg";
 import { Link } from "gatsby";
-import { ACTIVE } from "../../../constants/constants";
+// import { ACTIVE } from "../../../constants/constants";
 import BenefitIcon from "./Icon/BenefitIcon";
 import HomeIcon from "./Icon/HomeIcon";
 // import useScrollCenter from "../../../hooks/useScrollCenter";
 
 const Container = styled.div`
   width: 100vw;
-  height: 90px;
+  height: 68px;
   background-color: #fff;
   border-top: 1px solid #d0d4da;
   position: sticky;
@@ -53,7 +53,6 @@ const TabLink = styled(Link)`
 `;
 
 const TabNavigation = ({ path }) => {
-  console.log(BenefitIcon);
   return (
     <Container>
       <IconContainer>
@@ -64,10 +63,7 @@ const TabNavigation = ({ path }) => {
           </IconBox>
         </TabLink>
 
-        <TabLink
-          to="/discount"
-          isActive={path === "/discount" ? "#2A364E" : "#cccfd4"}
-        >
+        <TabLink to="/discount">
           <IconBox fillColor={path === "/discount" ? "#2A364E" : "#717989"}>
             <BenefitIcon
               fillColor={path === "/discount" ? "#2A364E" : "#cccfd4"}
@@ -78,7 +74,7 @@ const TabNavigation = ({ path }) => {
 
         <IconBox>
           <Icon src={CompasIcon} />
-          <p>자기개발</p>
+          <p>자기계발</p>
         </IconBox>
 
         <IconBox>

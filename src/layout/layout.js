@@ -15,7 +15,7 @@ const Layout = ({ path, children }) => {
     <ThemeProvider theme={styledTheme}>
       <ThemeContext.Provider value={theme}>
         <GlobalStyle />
-        <Navigation themeToggler={themeToggler} />
+        {/* <Navigation themeToggler={themeToggler} /> */}
         {children}
         {/* <Footer /> */}
         <TabNavigation path={path} />

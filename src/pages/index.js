@@ -1,15 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import Layout from "@layout/layout";
 import styled from "styled-components";
 import LgCard from "@components/common/card/lgCard";
 import MdCardList from "@components/common/card/mdCardList";
-import FundTable from "@components/financial/fundTable";
+import FundPage from "@components/financial/FundPage";
 import Container from "@styles/container";
 import Wrapper from "@styles/wrapper";
 import ContentsWrapper from "@styles/contentsWrapper";
-import { FundList } from "@src/constants/fundList";
 import { SalaryList } from "../constants/salaryList";
-import SmCardList from "../components/common/card/smCardList";
 import SEO from "../components/seo";
 
 const NaraCard = styled.div`
@@ -22,26 +20,7 @@ const NaraCard = styled.div`
   }
 `;
 
-const FundTitle = styled.div`
-  display: flex;
-  justify-content: space-between;
-
-  & button {
-    position: relative;
-    top: -4px;
-    cursor: pointer;
-    width: 90px;
-    height: 40px;
-    border: none;
-    border-radius: 8px;
-    background-color: var(--highlight-color);
-    color: var(--color-text-1);
-    font-size: 14px;
-  }
-`;
-
 const IndexPage = (props) => {
-  const [table, setTable] = useState(false);
   return (
     <Layout path={props.uri}>
       <SEO
@@ -87,20 +66,7 @@ const IndexPage = (props) => {
             </NaraCard>
           </ContentsWrapper>
           <ContentsWrapper>
-            <FundTitle>
-              <h2>🏦 장병내일준비적금</h2>
-              <button
-                onClick={(e) => setTable(!table)}
-                bgcolor={table === true ? "#0a0a0a" : "#326BBF"}
-              >
-                {table === true ? "카드 보기" : "표 보기"}
-              </button>
-            </FundTitle>
-            {table === true ? (
-              <FundTable />
-            ) : (
-              <SmCardList CardList={FundList} />
-            )}
+            <FundPage />
           </ContentsWrapper>
         </Wrapper>
       </Container>

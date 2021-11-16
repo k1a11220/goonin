@@ -8,7 +8,7 @@ const GlobalStyle = createGlobalStyle`
     --modal-width: 500px;
     --main-radius: 25px;
     --card-radius: 16px;
-    --top-padding: 64px;
+    --top-padding: 26px;
     --side-padding: 40px;
 
     --page-margin: 24px;
@@ -17,7 +17,7 @@ const GlobalStyle = createGlobalStyle`
 
     @media (max-width: 800px) {
       --main-radius: 0;
-      --top-padding: 56px;
+      --top-padding: 26px;
       --side-padding: 20px;
       --width: 100%;
       --page-margin: 0;
@@ -31,22 +31,22 @@ const GlobalStyle = createGlobalStyle`
 
 
     body.light {
-        --color-text: #1d1d1d;
+        --color-text: #2a364e;
         --color-text-1: #ffffff;
         --color-text-2: #4191FD;
-        --color-text-3: #c1c1c1;
-        --color-text-4: #5b5b5b;
+        --color-text-3: #717989;
+        --color-text-4: #717989;
         --bg-color: rgba(246, 246, 246, 0.5);
         --card-color: #ffffff;
         --card-color-1: #F8F8F8;
         --card-color-2: #ffffff;
-        --border: #cacaca;
-        --highlight-color: #326BBF;
+        --border: #f2f3f5;
+        --highlight-color: #2a364e;
     }
 
     body.dark {
         --color-text: #e6e6e6;
-        --color-text-1: #62B1FF;
+        --color-text-1: #ffffff;
         --color-text-2: #3282B8;
         --color-text-3: #5b5b5b;
         --color-text-4: #e6e6e6;
@@ -55,7 +55,7 @@ const GlobalStyle = createGlobalStyle`
         --card-color-1: #2c2c2c;
         --card-color-2: #1c1c1c;
         --border: rgba(207, 207, 207, 0.2);
-        --highlight-color: #203E5C;
+        --highlight-color: #2a364e;
     }
   }
 

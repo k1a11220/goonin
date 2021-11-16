@@ -165,12 +165,12 @@ const ModalLg = ({
             <Contents>
               {refinedData.map((data, index) => {
                 return (
-                  <>
-                    <h4 key={index}>{data.refinedTitle}</h4>
+                  <div key={index}>
+                    <h4>{data.refinedTitle}</h4>
                     {data.refinedDetail.map((data, index) => {
                       return <p key={index}>{data}</p>;
                     })}
-                  </>
+                  </div>
                 );
               })}
             </Contents>

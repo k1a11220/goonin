@@ -2,14 +2,15 @@ import React from "react";
 import styled from "styled-components";
 
 const Container = styled.div`
-  width: 100vw;
+  width: 100%;
   height: 60px;
   background-color: var(--card-color);
-  border-bottom: 1px solid #f2f3f5;
+  border-bottom: 1px solid var(--border);
   margin: 0 auto;
   position: sticky;
   top: 0;
   display: flex;
+  z-index: 1;
 `;
 
 const ListContainer = styled.div`
@@ -21,9 +22,9 @@ const ListContainer = styled.div`
 
   & div {
     color: #cccfd4;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 18px;
-    margin-left: 20px;
+    margin-left: var(--side-padding);
   }
 
   & div:first-of-type {

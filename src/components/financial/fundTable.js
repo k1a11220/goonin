@@ -24,9 +24,9 @@ const FundTable = () => {
           </tr>
         </thead>
         <tbody>
-          {FundList.map((data) => {
+          {FundList.map((data, index) => {
             return (
-              <tr>
+              <tr key={index}>
                 <td>{data.title}</td>
                 <td>{data.month_1}</td>
                 <td>{data.month_2}</td>

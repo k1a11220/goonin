@@ -19,17 +19,15 @@ const SmCardList = ({ CardList }) => {
       <Wrapper>
         {CardList.map((data, index) => {
           return (
-            <>
-              <SmCard
-                key={index}
-                title={data.title}
-                price={data.price}
-                detail={data.detail}
-                thumbnail={data.thumbnail}
-                icon={data.icon}
-                link={data.link}
-              />
-            </>
+            <SmCard
+              key={index}
+              title={data.title}
+              price={data.price}
+              detail={data.detail}
+              thumbnail={data.thumbnail}
+              icon={data.icon}
+              link={data.link}
+            />
           );
         })}
       </Wrapper>

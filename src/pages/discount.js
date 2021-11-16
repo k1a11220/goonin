@@ -3,7 +3,7 @@ import Layout from "@layout/layout";
 import Container from "@styles/container";
 import ContentsWrapper from "@styles/contentsWrapper";
 import Wrapper from "@styles/wrapper";
-import ReactTabIndicator from "react-tab-indicator";
+// import ReactTabIndicator from "react-tab-indicator";
 
 import SmCardList from "../components/common/card/smCardList";
 
@@ -13,6 +13,18 @@ import { ComList } from "../constants/comList";
 import { RestaurantsList } from "../constants/restaurantsList";
 import SEO from "@components/seo";
 import TabIndicator from "../components/common/TabIndicator/TabIndicator";
+import styled from "styled-components";
+
+const Title = styled.div`
+  background-color: var(--card-color);
+
+  & h1 {
+    font-size: 26px;
+    padding-top: 64px;
+    margin-bottom: 20px;
+    margin-left: var(--side-padding);
+  }
+`;
 
 const DiscountPage = (props) => {
   return (
@@ -23,6 +35,9 @@ const DiscountPage = (props) => {
         defer={false}
       />
       <Container>
+        <Title>
+          <h1>혜택</h1>
+        </Title>
         <TabIndicator />
         <Wrapper>
           <ContentsWrapper>

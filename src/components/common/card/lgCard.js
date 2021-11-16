@@ -51,11 +51,12 @@ const Contents = styled.div`
   }
 
   & p {
+    color: var(--color-text-3);
     font-size: 14px;
   }
 
   & p:last-of-type {
-    color: #3a9900;
+    color: var(--color-text-2);
     font-weight: 700;
   }
 `;
