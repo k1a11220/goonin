@@ -1,19 +1,18 @@
 import React from "react";
+import styled from "styled-components";
+import { Container, ContentsWrapper, Wrapper } from "@styles/styles";
+
 import Layout from "@layout/layout";
-import Container from "@styles/container";
-import ContentsWrapper from "@styles/contentsWrapper";
-import Wrapper from "@styles/wrapper";
-// import ReactTabIndicator from "react-tab-indicator";
 
 import SmCardList from "../components/common/card/smCardList";
-
 import { PlayList } from "../constants/playList";
 import { CultureList } from "../constants/cultureList";
 import { ComList } from "../constants/comList";
 import { RestaurantsList } from "../constants/restaurantsList";
+
 import SEO from "@components/seo";
-import TabIndicator from "../components/common/TabIndicator/TabIndicator";
-import styled from "styled-components";
+
+import { TabIndicator } from "@components/common/TabIndicator/tabIndicator";
 
 const Title = styled.div`
   background-color: var(--card-color);
@@ -40,10 +39,6 @@ const DiscountPage = (props) => {
         </Title>
         <TabIndicator />
         <Wrapper>
-          <ContentsWrapper>
-            {/* <h2>📱 통신</h2> */}
-            <SmCardList CardList={ComList} />
-          </ContentsWrapper>
           <ContentsWrapper>
             <h2>🎬 문화</h2>
             <SmCardList CardList={CultureList} />

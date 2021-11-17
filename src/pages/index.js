@@ -1,13 +1,15 @@
 import React from "react";
-import Layout from "@layout/layout";
 import styled from "styled-components";
+import { Container, ContentsWrapper, Wrapper } from "@styles/styles";
+
+import Layout from "@layout/layout";
+
 import LgCard from "@components/common/card/lgCard";
 import MdCardList from "@components/common/card/mdCardList";
 import FundPage from "@components/financial/FundPage";
-import Container from "@styles/container";
-import Wrapper from "@styles/wrapper";
-import ContentsWrapper from "@styles/contentsWrapper";
+
 import { SalaryList } from "../constants/salaryList";
+
 import SEO from "../components/seo";
 
 const NaraCard = styled.div`
