@@ -43,7 +43,7 @@ const ListContainer = styled.div.attrs((props) => ({
   }
 `;
 
-export function TabIndicator() {
+const TabIndicator = () => {
   const [selectedTab, setSelectedTab] = useTabs([
     "문화",
     "식당",
@@ -95,4 +95,6 @@ export function TabIndicator() {
       </Wrapper>
     </>
   );
-}
+};
+
+export default TabIndicator;

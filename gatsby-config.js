@@ -5,6 +5,12 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: "gatsby-plugin-apollo",
+      options: {
+        uri: "http://localhost:4000/",
+      },
+    },
+    {
       resolve: `gatsby-plugin-gtag`,
       options: {
         trackingId: `G-5NX75K2JR0`, // 측정 ID
